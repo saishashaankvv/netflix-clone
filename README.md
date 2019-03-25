@@ -1,4 +1,4 @@
-##DUMMYFLIX - A NETFLIX CLONE
+## DUMMYFLIX - A NETFLIX CLONE
 
 A Clone of Netflix using React.js. I am still a beginner in learning React. This contains the Landing Page for Dummyflix, A clone of Netflix i built. 
 
@@ -9,7 +9,7 @@ Reusable Components - Button, Navbar, Table, etc.
 Style as you go.
 Dynamic Rendering.
 
-##TODO 
+## TODO 
 
 Change SCSS Classnames for cleaner Code.
 Add routing.
