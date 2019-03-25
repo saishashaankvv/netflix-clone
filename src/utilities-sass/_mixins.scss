@@ -1,0 +1,28 @@
+@mixin button-basic-styling {
+    border: none;
+    color: white;
+    padding: 1.5rem 3.2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+}
+
+@mixin respondWidth($breakpoint){
+    @media(max-width: $breakpoint){
+        @content
+    }
+}
+
+
+@mixin respondHeight($breakpoint){
+    @media(max-height: $breakpoint){
+        @content
+    }
+}
+
+@mixin clearfix{
+    content: "";
+    clear: both;
+    display: table;
+}

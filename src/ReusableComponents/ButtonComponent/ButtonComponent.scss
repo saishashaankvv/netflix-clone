@@ -1,0 +1,42 @@
+@import '../../utilities-sass/variables';
+@import '../../utilities-sass/mixins';
+
+.button-red {
+    background-color: $color-red;
+    @include button-basic-styling;
+  }
+
+
+  .button-green {
+    background-color: $color-green;
+    @include button-basic-styling;
+  }
+
+  .button-blue {
+    background-color: $color-blue;
+    @include button-basic-styling;
+  }
+
+  .button-gray {
+    background-color: $color-gray;
+    @include button-basic-styling;
+  }
+
+  
+  .button-black {
+    background-color: $color-black-light;
+    @include button-basic-styling;
+  }
+
+  .button-small {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+  }
+  .button-medium {
+    padding: 2rem 4rem;
+    font-size: 1.15rem;
+  }
+  .button-large {
+    padding: 3rem 5rem;
+    font-size: 1.25rem;
+  }

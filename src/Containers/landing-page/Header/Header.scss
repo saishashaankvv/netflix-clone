@@ -1,0 +1,144 @@
+@import "../../../utilities-sass/variables";
+@import "../../../utilities-sass/mixins";
+
+.landing-page__header {
+  background: linear-gradient(rgba($color-black, 0.7), rgba($color-black, 0.7)),
+    url(../../../assets//images/dummyflix-background.jpg);
+  background-size: cover;
+  display: block;
+  text-align: center;
+  height: 100%;
+  &-title {
+    display: block;
+    padding-top: 2rem;
+    &-logo {
+      width: 20rem;
+      height: 6rem;
+    }
+
+    &-button {
+      position: absolute;
+      top: 2rem;
+      right: 5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+  }
+
+  &-main {
+    display: block;
+    width: 100vw;
+    color: $color-white;
+    margin: 15rem 0 30rem 0;
+    &-primary {
+      font-size: 7rem;
+      font-weight: bold;
+      text-transform: capitalize;
+      letter-spacing: 0.5rem;
+    }
+
+    &-tertiary {
+      font-size: 5rem;
+      text-transform: uppercase;
+      padding-top: 2rem;
+      letter-spacing: 0.5rem;
+    }
+
+    &-content {
+      &-button {
+        margin-top: 3rem;
+        text-transform: uppercase;
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+      }
+    }
+  }
+}
+
+@include respondWidth(1190px) {
+  .landing-page__header {
+    &-main {
+      &-primary {
+        font-size: 6rem;
+        letter-spacing: 0.2rem;
+      }
+
+      &-tertiary {
+        font-size: 4rem;
+        letter-spacing: 0.2rem;
+      }
+    }
+  }
+}
+
+@include respondWidth(872px) {
+  .landing-page__header {
+    &-main {
+      &-primary {
+        font-size: 4rem;
+        letter-spacing: 0.2rem;
+      }
+
+      &-tertiary {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+      }
+
+      &-content {
+        &-button {
+          font-size: 1.5rem;
+          padding: 2rem 2rem;
+          letter-spacing: 0.2rem;
+        }
+      }
+    }
+  }
+}
+
+@include respondWidth(620px) {
+  .landing-page__header {
+    &-title {
+      text-align: left;
+      &-logo {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
+@include respondWidth(468px) {
+  .landing-page__header {
+    &-title {
+      &-logo {
+        width: 15rem;
+        height: 4rem;
+      }
+
+      &-button {
+        right: 3rem;
+        font-size: 1.2rem;
+        padding: 1rem 1rem;
+      }
+    }
+
+    &-main {
+      &-primary {
+        font-size: 2.8rem;
+        letter-spacing: 0.2rem;
+      }
+
+      &-tertiary {
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+      }
+
+      &-content {
+        &-button {
+          font-size: 1.5rem;
+          padding: 2rem 2rem;
+          letter-spacing: 0.2rem;
+        }
+      }
+    }
+  }
+}

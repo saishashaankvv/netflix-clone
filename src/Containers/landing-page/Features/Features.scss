@@ -1,0 +1,457 @@
+@import "../../../utilities-sass/variables";
+@import "../../../utilities-sass/mixins";
+
+.landing-page__features {
+  text-align: center;
+  color: $color-white;
+  font-size: 2rem;
+  height: 100%;
+  &-nav {
+    display: inline-block;
+    text-decoration: none;
+    width: 100vw;
+
+    background-color: $color-gray-dark-1;
+    border-bottom: 2px solid $color-gray-dark-2;
+    &-content {
+      &-list {
+        list-style: none;
+        margin: 0;
+        li {
+          text-align: center;
+          display: inline-block;
+          vertical-align: bottom;
+        }
+      }
+
+      &-link {
+        padding: 5rem 15rem;
+        color: $color-white;
+        text-decoration: none;
+        display: inline-block;
+        .small-text {
+          display: none;
+        }
+        &.active {
+          border-bottom: 0.3rem solid $color-red;
+          position: relative;
+          bottom: -0.3rem;
+        }
+      }
+
+      &-logo {
+        height: 6rem;
+        width: 6rem;
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    &-devices-tab {
+      font-size: 3rem;
+      margin: 0 auto;
+      max-width: 90%;
+
+      &-content {
+        height: auto;
+        &-header-text {
+          position: relative;
+          width: 50%;
+          top: 1rem;
+          right: 10rem;
+          text-align: left;
+          display: inline-block;
+        }
+        &-button {
+          margin-left: 10rem;
+          margin-top: 2rem;
+          font-size: 1.5rem;
+          padding: 2rem 2rem;
+          text-transform: uppercase;
+          letter-spacing: 0.2rem;
+        }
+
+        &-collage {
+          width: 100%;
+          margin: 8rem 0;
+          &-component {
+            margin: 0 5rem;
+            &:last-child {
+              margin-right: 0;
+            }
+            &:first-child {
+              margin-left: 0;
+            }
+            display: inline-block;
+
+            &-text {
+              font-size: 2rem;
+
+              span {
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-prices-tab {
+      font-size: 3rem;
+      margin: 0 auto;
+      max-width: 90%;
+      &-content {
+        height: auto;
+        &-header-text {
+          position: relative;
+          width: 50%;
+          top: 1rem;
+          text-align: left;
+          display: inline-block;
+        }
+        &-table {
+          &-wrapper {
+            &-table {
+              &-content {
+                margin: 3rem auto;
+              }
+            }
+          }
+          &-row {
+            :first-child {
+              width: 93%;
+              text-align: left;
+            }
+            &-item {
+              font-size: 2rem;
+              padding: 1.2rem 1rem;
+            }
+          }
+        }
+        &-button {
+          margin-top: 2rem;
+          font-size: 1.5rem;
+          padding: 2rem 2rem;
+          text-transform: uppercase;
+          letter-spacing: 0.2rem;
+        }
+      }
+    }
+    /* To Analyze Tomorrow */
+    &-cancel-tab {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 70%;
+      font-size: 3rem;
+      padding: 4rem 0;
+      max-width: 140rem;
+      &-content {
+        vertical-align: top;
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        top: 7rem;
+        &-button {
+          margin-top: 2rem;
+          font-size: 1.5rem;
+          padding: 2rem 2rem;
+          text-transform: uppercase;
+          letter-spacing: 0.2rem;
+        }
+      }
+
+      &-image {
+        vertical-align: top;
+        width: 50%;
+        display: inline-block;
+        img {
+          height: auto;
+          max-height: 400px;
+          width: auto;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include respondWidth(1389px) {
+  .landing-page__features {
+    &-nav {
+      &-content {
+        &-link {
+          padding: 0 6rem;
+        }
+      }
+    }
+  }
+}
+
+@include respondWidth(849px) {
+  .landing-page__features {
+    &-nav {
+      &-content {
+        &-link {
+          padding: 0 6rem;
+          .big-text {
+            display: none;
+          }
+          .small-text {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respondWidth(849px) {
+  .landing-page__features {
+    &-nav {
+      &-content {
+        &-link {
+          padding: 0 3rem;
+        }
+      }
+    }
+  }
+}
+
+@include respondWidth(849px) {
+  .landing-page__features {
+    &-nav {
+      &-content {
+        &-link {
+          padding: 0 2rem;
+        }
+      }
+    }
+  }
+}
+
+/* To Analyze Tomorrow */
+
+@include respondWidth(820px) {
+  .landing-page__features {
+    &-nav {
+      &-cancel-tab {
+        padding-top: 20px;
+        &-content {
+          top: 20px;
+          width: 100%;
+          text-align: center;
+        }
+        &-image {
+          width: 100%;
+          text-align: center;
+          padding-top: 2rem;
+          img {
+            margin: 10px auto 0;
+            max-width: 90%;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respondWidth(1515px) {
+  .landing-page__features {
+    &-nav {
+      &-devices-tab {
+        &-content {
+          &-collage {
+            &-component {
+              margin: 0 2rem;
+              &-image {
+                width: 20rem;
+                height: 20rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respondWidth(1156px) {
+  .landing-page__features {
+    &-nav {
+      &-devices-tab {
+        &-content {
+          height: auto;
+          &-header-text {
+            position: relative;
+            width: 50%;
+            top: 2rem;
+            font-size: 2rem;
+            right: 5rem;
+            text-align: left;
+            display: inline-block;
+          }
+          &-button {
+            margin-left: 5rem;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            padding: 2rem 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respondWidth(990px) {
+  .landing-page__features {
+    &-nav {
+      &-devices-tab {
+        &-content {
+          &-collage {
+            &-component {
+              display: block;
+              &-image {
+                width: 90%;
+                height: 90%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respondWidth(756px) {
+  .landing-page__features {
+    &-nav {
+      &-devices-tab {
+        &-content {
+          height: auto;
+          &-header-text {
+            position: relative;
+            width: 50%;
+            top: 2rem;
+            font-size: 1.5rem;
+            right: 3rem;
+            text-align: left;
+            display: inline-block;
+          }
+          &-button {
+            margin-left: 3rem;
+            margin-top: 2rem;
+            font-size: 1rem;
+            padding: 2rem 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respondWidth(588px) {
+  .landing-page__features {
+    &-nav {
+      &-devices-tab {
+        &-content {
+          display: block;
+          text-align: center;
+          &-header-text {
+            width: 70%;
+            text-align: center;
+            margin-left: 7rem;
+          }
+          &-button {
+            margin-top: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respondWidth(858px) {
+  .landing-page__features {
+    &-nav {
+      &-prices-tab {
+        &-content {
+          &-header-text {
+            font-size : 1.5rem;
+          }
+
+          &-button {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            padding: 1.5rem 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+          }
+        }
+
+       
+      }
+    }
+  }
+}
+
+
+@include respondWidth(858px) {
+  .landing-page__features {
+    &-nav {
+      &-prices-tab {
+        &-content {
+          &-header-text {
+            font-size : 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respondWidth(580px) {
+  .landing-page__features {
+    &-nav {
+      &-prices-tab {
+        &-content {
+          &-button{
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            padding: 1.2rem 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+          }
+          &-table {
+            &-wrapper {
+              &-table {
+                &-content {
+                  margin: 1rem auto;
+                  font-size : 1.5rem;
+                }
+              }
+            }
+            &-row {
+              :first-child {
+                width: 93%;
+                text-align: left;
+              }
+              &-item {
+                font-size: 1.2rem;
+                padding: 0.2rem 0.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.landing-page__features-nav-prices-tab-content-table-row:nth-child(even) {
+  background-color: $color-gray-dark-1;
+}

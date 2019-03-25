@@ -1,0 +1,44 @@
+@import "../../../utilities-sass/variables";
+@import "../../../utilities-sass/mixins";
+
+.landing-page__footer {
+  margin: 0 auto;
+  font-size: 2vw;
+  max-width: 70%;
+  width : 100vw;
+  color: $color-white;
+  margin-top : 5rem;
+  &-top-text {
+    display: block;
+  }
+  &-content {
+    display: inline-block;
+    margin: 5rem 1rem 2rem 1rem;
+  }
+  &-list {
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: $color-white;
+        &:hover{
+            text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+@include respondWidth (558px){
+    .landing-page__footer{
+        font-size : 3vw;
+    }
+}
+
+
+@include respondWidth (408px){
+    .landing-page__footer{
+        font-size : 3.45vw;
+    }
+}
